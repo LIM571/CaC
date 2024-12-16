@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Cara a Cara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center">
+    <header class="bg-blue-500 text-white w-full p-4 text-center text-xl font-bold">
+        Cara a Cara - Jogo Online
+    </header>
+
+    <main class="flex flex-col items-center mt-8 w-10/12">
+        <!-- Personagens visíveis no topo -->
+       
+        <!-- Personagens em cards pequenos com ações -->
+        <section id="small-cards" class="grid grid-cols-6 gap-4">
+            <!-- Substituir src com os caminhos das imagens reais -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem01.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem02.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem03.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem04.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem05.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem06.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>   <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem07.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem08.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem09.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem10.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem11.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem12.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem13.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>   <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem14.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem15.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem16.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem17.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem18.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem19.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem20.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>   <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem21.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <!-- Repetir para os 24 personagens -->
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem22.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem23.png" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+            <div class="relative bg-white p-2 shadow-md rounded-md" id="char-1">
+                <img src="personagem24.jpg" alt="Personagem 1" class="w-full h-16 object-cover rounded-md">
+                <div class="flex justify-between mt-2">
+                    <button onclick="hideCharacter('char-1')" class="bg-red-500 text-white px-2 py-1 rounded-md text-sm">Abaixar</button>
+                    <button onclick="guessCharacter('Personagem 1')" class="bg-green-500 text-white px-2 py-1 rounded-md text-sm">Chutar</button>
+                </div>
+            </div>
+           
+          
+        
+      
+
+        <div class="mt-4 flex gap-4">
+            <button onclick="resetGame()" class="bg-gray-500 text-white px-4 py-2 rounded-md">Reiniciar Jogo</button>
+        </div>
+    </main>
+
+    <script>
+        // Função para abaixar um personagem
+        function hideCharacter(id) {
+            const charElement = document.getElementById(id);
+            if (charElement) {
+                charElement.style.display = 'none';
+            }
+        }
+
+    
+
+        // Função para reiniciar o jogo
+        function resetGame() {
+            const characters = document.querySelectorAll('[id^="char-"]');
+            characters.forEach(char => {
+                char.style.display = 'block';
+            });
+            alert('O jogo foi reiniciado!');
+        }
+    </script>
+</body>
+</html>
